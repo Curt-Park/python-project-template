@@ -6,7 +6,12 @@ from dummy import fibonacci
 
 
 def test_fibonacci() -> None:
-    """Test fibonacci numbers."""
+    """Test fibonacci function with various inputs.
+
+    Tests include:
+    - Negative input validation (should raise AssertionError)
+    - Fibonacci sequence values from 0 to 9
+    """
     with pytest.raises(AssertionError):
         fibonacci(-1)
     assert fibonacci(0) == 0

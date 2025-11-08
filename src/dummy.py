@@ -8,7 +8,17 @@ logger = logging.getLogger()
 
 
 def fibonacci(num: int) -> int:
-    """Return fibonacci number."""
+    """Calculate the nth Fibonacci number.
+
+    Args:
+        num: The position in the Fibonacci sequence (must be non-negative).
+
+    Returns:
+        The nth Fibonacci number.
+
+    Raises:
+        AssertionError: If num is negative.
+    """
     assert num >= 0
     prev, curr = 0, 1
     for _ in range(num):

@@ -21,6 +21,7 @@ python-project-template/
 ├── .cursorrules      # Cursor IDE AI assistant rules and guidelines
 ├── .mise.toml        # mise tool version manager configuration (Python and tool versions)
 ├── pyproject.toml    # Project configuration and dependencies
+├── release-please-config.json    # Release Please configuration for automated version management
 ├── Makefile          # Development commands
 └── logging.conf      # Logging configuration
 ```
