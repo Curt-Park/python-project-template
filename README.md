@@ -1,4 +1,27 @@
 # Python Project Template
+A template project for quickly starting Python projects with modern development practices.
+
+## Overview
+This template provides a modern Python development environment with the following features:
+- **Python 3.12+** support
+- **Ruff** for code formatting and linting (replaces Black, isort, flake8)
+- **pytest** for unit testing and coverage reporting
+- **uv** for fast dependency management
+- **Type hints** and **PEP 257** compliant docstring enforcement
+- **GitHub Actions** for CI/CD pipeline
+- Modular project structure (src layout)
+- Logging configuration included
+
+## Project Structure
+```
+python-project-template/
+├── src/              # Source code
+├── tests/            # Test code
+├── .github/          # GitHub Actions workflows
+├── pyproject.toml    # Project configuration and dependencies
+├── Makefile          # Development commands
+└── logging.conf      # Logging configuration
+```
 
 ### Commands for Setups
 ```bash
