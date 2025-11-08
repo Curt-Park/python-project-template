@@ -1,35 +1,18 @@
 # Python Project Template
-This repository is a python template repo for internal uses of Annotation-AI.
 
-## File Structure
+### Commands for Setups
 ```bash
-.
-├── LICENSE
-├── Makefile          # commands
-├── README.md
-├── requirements.txt  # package information
-├── setup.cfg         # configurations for formatting & linting & unit-test
-├── src               # source code location
-└── test
-    └── utest         # unit tests location
+make init       # Initialize the project
+make setup      # Install dependencies
+make setup-dev  # Install dependencies with development packages
 ```
 
-## Commands
+## Commands for Development
 ```bash
-$ make env      # create anaconda environment
-$ make setup    # initial setup for the project
 $ make format   # format python scripts
 $ make lint     # lint python scripts
-$ make utest    # run unit tests
-$ make cov      # open coverage report (after `make utest`)
+$ make test     # run unit tests
 ```
-
-## Configurations
-`setup.cfg` states all configurations for formatting & linting & unit-test.
-
-## Verifications
-- per commit: pre-commit hook runs formatting and linting.
-- per pull-request: GitHub Actions check formatting, linting, and unit-test results.
 
 ## Recommended Repository Settings
 #### Restriction on multi-commit pushes
