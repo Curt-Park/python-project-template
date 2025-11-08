@@ -1,35 +1,41 @@
 # Python Project Template
-This repository is a python template repo for internal uses of Annotation-AI.
+A template project for quickly starting Python projects with modern development practices.
 
-## File Structure
-```bash
-.
-├── LICENSE
-├── Makefile          # commands
-├── README.md
-├── requirements.txt  # package information
-├── setup.cfg         # configurations for formatting & linting & unit-test
-├── src               # source code location
-└── test
-    └── utest         # unit tests location
+## Overview
+This template provides a modern Python development environment with the following features:
+- **Python 3.12+** support
+- **Ruff** for code formatting and linting (replaces Black, isort, flake8)
+- **pytest** for unit testing and coverage reporting
+- **uv** for fast dependency management
+- **Type hints** and **PEP 257** compliant docstring enforcement
+- **GitHub Actions** for CI/CD pipeline
+- Modular project structure (src layout)
+- Logging configuration included
+
+## Project Structure
+```
+python-project-template/
+├── src/              # Source code
+├── tests/            # Test code
+├── .github/          # GitHub Actions workflows
+├── pyproject.toml    # Project configuration and dependencies
+├── Makefile          # Development commands
+└── logging.conf      # Logging configuration
 ```
 
-## Commands
+### Commands for Setups
 ```bash
-$ make env      # create anaconda environment
-$ make setup    # initial setup for the project
+make init       # Initialize the project
+make setup      # Install dependencies
+make setup-dev  # Install dependencies with development packages
+```
+
+## Commands for Development
+```bash
 $ make format   # format python scripts
 $ make lint     # lint python scripts
-$ make utest    # run unit tests
-$ make cov      # open coverage report (after `make utest`)
+$ make test     # run unit tests
 ```
-
-## Configurations
-`setup.cfg` states all configurations for formatting & linting & unit-test.
-
-## Verifications
-- per commit: pre-commit hook runs formatting and linting.
-- per pull-request: GitHub Actions check formatting, linting, and unit-test results.
 
 ## Recommended Repository Settings
 #### Restriction on multi-commit pushes

@@ -1,0 +1,55 @@
+[project]
+name = "python-project-template"
+version = "0.0.1"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [
+    { name = "Curt Park", email = "www.jwpark.co.kr@gmail.com" },
+]
+keywords = ["python", "project_template"]
+classifiers = []
+
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.14.3",
+    "pytest>=8.4.2",
+    "pytest-cov>=7.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # Pyflakes
+    "I",   # isort
+    "N",   # pep8-naming
+    "UP",  # pyupgrade
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "PIE", # flake8-pie
+    "SIM", # flake8-simplify
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = [
+    "--strict-markers",
+    "--strict-config",
+    "--cov=src",
+    "--cov-report=term-missing",
+    "--cov-report=html",
+]
