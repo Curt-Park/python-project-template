@@ -22,6 +22,7 @@ python-project-template/
 ├── .mise.toml        # mise tool version manager configuration (Python and tool versions)
 ├── pyproject.toml    # Project configuration and dependencies
 ├── release-please-config.json    # Release Please configuration for automated version management
+├── .release-please-manifest.json # Release Please manifest file (auto-managed by release-please)
 ├── Makefile          # Development commands
 └── logging.conf      # Logging configuration
 ```
