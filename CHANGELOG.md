@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/Curt-Park/python-project-template/compare/python-project-template-v0.1.0...python-project-template-v0.1.1) (2025-11-08)
+
+
+### Bug Fixes
+
+* cursor rules header for Python project ([#5](https://github.com/Curt-Park/python-project-template/issues/5)) ([1dee8a9](https://github.com/Curt-Park/python-project-template/commit/1dee8a99d13e14a7f4c218d8396b15a4ae320672))
+
 ## [0.1.0](https://github.com/Curt-Park/python-project-template/compare/python-project-template-v0.0.1...python-project-template-v0.1.0) (2025-11-08)
 
 
