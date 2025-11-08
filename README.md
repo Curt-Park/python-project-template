@@ -8,6 +8,7 @@ This template provides a modern Python development environment with the followin
 - **uv** for fast dependency management
 - **Type hints** and **PEP 257** compliant docstring enforcement
 - **GitHub Actions** for CI/CD pipeline
+- **Release Please** for automated version management based on Conventional Commits
 - Modular project structure (src layout)
 - Logging configuration included
 
