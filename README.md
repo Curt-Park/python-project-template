@@ -3,12 +3,12 @@ A template project for quickly starting Python projects with modern development 
 
 ## Overview
 This template provides a modern Python development environment with the following features:
-- **Python 3.12+** support
 - **Ruff** for code formatting and linting (replaces Black, isort, flake8)
 - **pytest** for unit testing and coverage reporting
 - **uv** for fast dependency management
 - **Type hints** and **PEP 257** compliant docstring enforcement
 - **GitHub Actions** for CI/CD pipeline
+- **Release Please** for automated version management based on Conventional Commits
 - Modular project structure (src layout)
 - Logging configuration included
 
@@ -18,7 +18,10 @@ python-project-template/
 ├── src/              # Source code
 ├── tests/            # Test code
 ├── .github/          # GitHub Actions workflows
+├── .cursorrules      # Cursor IDE AI assistant rules and guidelines
+├── .mise.toml        # mise tool version manager configuration (Python and tool versions)
 ├── pyproject.toml    # Project configuration and dependencies
+├── release-please-config.json    # Release Please configuration for automated version management
 ├── Makefile          # Development commands
 └── logging.conf      # Logging configuration
 ```
@@ -48,3 +51,6 @@ $ make test     # run unit tests
 - Require a pull request before merging & Require approvals
 - Require status checks to pass before merging & Require branches to be up to date before merging
 - Include administrators
+
+## NOTE
+- The python version should be aligned in `pyproject.toml` and `.mise.toml`.
